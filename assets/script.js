@@ -30,16 +30,17 @@ imageContainer.addEventListener("click", function(event) {
           "style",
           "background-color: rgb(12, 172, 212);"
       );
-      console.log("click");
   }
 
   function changeTwo(event) {
     event.stopPropagation();
-      event.currentTarget.setAttribute(
-          "style",
-          "background-color: white;"
-      );
-      console.log("click");
+    if (element.matches("dco")) {
+        event.currentTarget.setAttribute(
+            "style",
+            "background-color: white;"
+        );  
+    }
+      
   }
 
   function changeThree(event) {
@@ -48,7 +49,6 @@ imageContainer.addEventListener("click", function(event) {
           "style",
           "background-color: red;"
       );
-      console.log("click");
   }
 
   function changeFour(event) {
@@ -57,16 +57,13 @@ imageContainer.addEventListener("click", function(event) {
           "style",
           "background-color: blue;"
       );
-      console.log("click");
   }
 
-  console.log("click")
 
-
-  dco.addEventListener("click", changeOne)
-  dct.addEventListener("click", changeTwo)
-  dcx.addEventListener("click", changeThree)
-  dcf.addEventListener("click", changFour)
+  BODZ.addEventListener("click", changeOne)
+  BODZ.addEventListener("click", changeTwo)
+  BODZ.addEventListener("click", changeThree)
+  BODZ.addEventListener("click", changeFour)
 
   
 
