@@ -1,5 +1,8 @@
 var imageContainer = document.querySelector(".img-container");
-var C1 = document.querySelector("h2")
+var dco = document.querySelector(".1")
+var dct = document.querySelector(".2")
+var dcx = document.querySelector(".3")
+var dcf = document.querySelector(".4")
 
 
 imageContainer.addEventListener("click", function(event) {
@@ -18,6 +21,11 @@ imageContainer.addEventListener("click", function(event) {
     }
   }
 });
+
+function keydownAction() {
+    console.log('keydown')
+    document.querySelector("#status").innerHTML = "KEYDOWN Event";
+  }
 
 //  Listen for any clicks within the img-container div
 // Get the current value of the image's data-state attribute
