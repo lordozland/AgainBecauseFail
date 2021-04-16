@@ -25,6 +25,7 @@ imageContainer.addEventListener("click", function(event) {
 
 
   function changeOne(event) {
+    event.stopPropagation();
       event.currentTarget.setAttribute(
           "style",
           "background-color: rgb(12, 172, 212);"
@@ -32,10 +33,42 @@ imageContainer.addEventListener("click", function(event) {
       console.log("click");
   }
 
+  function changeTwo(event) {
+    event.stopPropagation();
+      event.currentTarget.setAttribute(
+          "style",
+          "background-color: white;"
+      );
+      console.log("click");
+  }
+
+  function changeThree(event) {
+    event.stopPropagation();
+      event.currentTarget.setAttribute(
+          "style",
+          "background-color: red;"
+      );
+      console.log("click");
+  }
+
+  function changeFour(event) {
+    event.stopPropagation();
+      event.currentTarget.setAttribute(
+          "style",
+          "background-color: blue;"
+      );
+      console.log("click");
+  }
+
   console.log("click")
 
 
-  BODZ.addEventListener("click", changeOne)
+  dco.addEventListener("click", changeOne)
+  dct.addEventListener("click", changeTwo)
+  dcx.addEventListener("click", changeThree)
+  dcf.addEventListener("click", changFour)
+
+  
 
 //  Listen for any clicks within the img-container div
 // Get the current value of the image's data-state attribute
