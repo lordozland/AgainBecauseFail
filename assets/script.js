@@ -34,13 +34,10 @@ imageContainer.addEventListener("click", function(event) {
 
   function changeTwo(event) {
     event.stopPropagation();
-    if (element.matches("dco")) {
-        event.currentTarget.setAttribute(
-            "style",
-            "background-color: white;"
-        );  
-    }
-      
+      event.currentTarget.setAttribute(
+          "style",
+          "background-color: white;"
+      );
   }
 
   function changeThree(event) {
