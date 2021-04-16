@@ -23,16 +23,19 @@ imageContainer.addEventListener("click", function(event) {
   }
 });
 
-function keydownAction() {
-    console.log('keydown')
-    document.querySelector("#status").innerHTML = "KEYDOWN Event";
-  }
 
   function changeOne(event) {
-      event.
+      event.currentTarget.setAttribute(
+          "style",
+          "background-color: rgb(12, 172, 212);"
+      );
+      console.log("click");
   }
 
-  dco.addEventListener("click", changeOne)
+  console.log("click")
+
+
+  BODZ.addEventListener("click", changeOne)
 
 //  Listen for any clicks within the img-container div
 // Get the current value of the image's data-state attribute
